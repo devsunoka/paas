@@ -16,7 +16,7 @@ from config import ecs_test_drive, piper_mongodb
 ### Local or Remote MongoDB instance
 DB_USER = piper_mongodb['mongodb_user']  
 DB_PASSWORD = piper_mongodb['mongodb_password']  
-db_arg = "mongodb://" + DB_USER + ":" + DB_PASSWORD + "@cluster0-shard-00-00.jnkoj.mongodb.net:27017,cluster0-shard-00-01.jnkoj.mongodb.net:27017,cluster0-shard-00-02.jnkoj.mongodb.net:27017/?ssl=true&replicaSet=atlas-10dctt-shard-0&authSource=admin&retryWrites=true&w=majority"
+db_arg = "mongodb+srv://" + DB_USER + ":" + DB_PASSWORD + "@nosdxlab.njji09m.mongodb.net/?retryWrites=true&w=majority"
 client = MongoClient(db_arg)
 
 # Make sure this create your unique MongoDB database name######
